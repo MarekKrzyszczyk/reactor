@@ -1,0 +1,4 @@
+target/
+.idea/
+qodana.yaml
+reactor.iml
