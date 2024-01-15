@@ -12,7 +12,6 @@ public class Lec04Error {
                     for (int i = 1; i < 501 && !fluxSink.isCancelled(); i++) {
                         System.out.println("Pushed: " + i);
                         fluxSink.next(i);
-                        String name = "Alter name";
                     }
                     fluxSink.complete();
                 })
