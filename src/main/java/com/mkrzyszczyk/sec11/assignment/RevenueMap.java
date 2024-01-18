@@ -8,10 +8,10 @@ import java.util.Map;
 @ToString
 public class RevenueMap {
 
-    private LocalDateTime localDateTime = LocalDateTime.now();
-    private Map<String, Double> revenueMap;
+    private final LocalDateTime localDateTime = LocalDateTime.now();
+    private final Map<String, Double> revenueReport;
 
     public RevenueMap(Map<String, Double> revenueMap) {
-        this.revenueMap = revenueMap;
+        this.revenueReport = revenueMap;
     }
 }
