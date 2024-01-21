@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Slf4j
-public class Assignment {
+public class Assignment1 {
 
     public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ public class Assignment {
                         || bookOrder.getCategory().equals("Science Fiction")
                         || bookOrder.getCategory().equals("Suspense/Thriller"))
                 .buffer(Duration.ofSeconds(5))
-                .map(Assignment::getRevenue)
+                .map(Assignment1::getRevenue)
                 .subscribe(revenueMap -> log.info(revenueMap.toString()));
 
         Util.sleepSeconds(60);
